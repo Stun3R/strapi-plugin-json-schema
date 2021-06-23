@@ -1,0 +1,9 @@
+{
+  "containers.HomePage.Button.open": "Ouvrir la documentation",
+  "containers.HomePage.PluginHeader.description": "Récupérez votre Token d'authentification afin d'authentifier le CLI du package Strapi SDK.",
+  "containers.HomePage.PluginHeader.title": "Strapi SDK Bridge - Authentification",
+  "containers.HomePage.copied": "Token copié dans le presse papier",
+  "containers.HomePage.jwtToken": "Récuperez votre jwt token",
+  "containers.HomePage.jwtToken.description": "Copiez-collez ce jeton dans le fichier .env de votre frontend afin d'utiliser la fonction de génération de SDK.",
+  "plugin.name": "SDK Bridge"
+}

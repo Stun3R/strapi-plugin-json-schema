@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "sdk-bridge.index",
+      "config": {
+        "policies": ["plugins::sdk-bridge.index"]
+      }
+    }
+  ]
+}

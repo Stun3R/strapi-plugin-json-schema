@@ -1,0 +1,58 @@
+{
+  "name": "strapi-plugin-sdk-bridge",
+  "version": "0.0.0",
+  "description": "Bridge for the Strapi SDK in order to generate Typescript's types by exposing your Strapi content types.",
+  "strapi": {
+    "name": "sdk-bridge",
+    "icon": "plug",
+    "description": "Bridge for the Strapi SDK in order to generate Typescript's types by exposing your Strapi content types."
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "commit": "git-cz",
+    "release": "dotenv release-it --",
+    "prepare": "siroc build"
+  },
+  "dependencies": {
+    "@buffetjs/core": "^3.3.6",
+    "@buffetjs/custom": "^3.3.6",
+    "strapi-helper-plugin": "^3.6.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
+    "@release-it/conventional-changelog": "3.0.1",
+    "commitizen": "4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "dotenv-cli": "4.0.0",
+    "husky": "6.0.0",
+    "lint-staged": "11.0.0",
+    "release-it": "14.10.0"
+  },
+  "author": {
+    "name": "Thibaut DAVID",
+    "email": "thibautdavid@icloud.com",
+    "url": "https://github.com/Stun3R"
+  },
+  "maintainers": [
+    {
+      "name": "Thibaut DAVID",
+      "email": "thibautdavid@icloud.com",
+      "url": "https://github.com/Stun3R"
+    }
+  ],
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
