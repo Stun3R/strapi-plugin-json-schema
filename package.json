@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-sdk-bridge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bridge for the Strapi SDK in order to generate Typescript's types by exposing your Strapi content types.",
   "strapi": {
     "name": "sdk-bridge",
