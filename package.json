@@ -11,8 +11,7 @@
     "lint": "eslint . --ext .ts,.js",
     "lint:fix": "eslint . --ext .ts,.js --fix",
     "commit": "git-cz",
-    "release": "dotenv release-it --",
-    "prepare": "siroc build"
+    "release": "dotenv release-it --"
   },
   "dependencies": {
     "@buffetjs/core": "^3.3.6",
