@@ -37,7 +37,7 @@ or just run Strapi in the development mode with `--watch-admin` option:
 yarn develop --watch-admin
 ```
 
-The **UI Navigation** plugin should appear in the **Plugins** section of Strapi sidebar after you run app again.
+The **SDK Bridge** plugin should appear in the **Plugins** section of Strapi sidebar after you run app again.
 
 Enjoy 🎉
 
