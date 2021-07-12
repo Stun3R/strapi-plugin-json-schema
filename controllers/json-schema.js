@@ -1,9 +1,9 @@
 "use strict";
 
 /**
- * sdk-bridge.js controller
+ * json-schema.js controller
  *
- * @description: A set of functions called "actions" of the `sdk-bridge` plugin.
+ * @description: A set of functions called "actions" of the `json-schema` plugin.
  */
 
 const _ = require("lodash");
@@ -14,6 +14,7 @@ const types = {
   richtext: "string",
   email: "string",
   password: "string",
+  enumeration: "string",
   integer: "number",
   biginteger: "number",
   float: "number",
@@ -26,6 +27,10 @@ const types = {
   uid: "string",
 };
 
+const isTsType = (type) => {
+  return type === 'any'
+}
+
 module.exports = {
   /**
    * Default action.
@@ -35,26 +40,20 @@ module.exports = {
 
   index: async (ctx) => {
     // Template of the response
-    const models = {
-      contentTypes: [],
-      schema: [],
-    };
+    const jsonSchema = []
 
     // navigate through all strapi models
     for (const key in strapi.models) {
       // Only get the contentTypes
       if (strapi.models[key].modelType === "contentType") {
-        const contentType = {
-          name: key,
-          type: strapi.models[key].kind,
-        };
-
         // Specify the default value of the schema
         const schema = {
-          $schema: "http://json-schema.org/schema#",
           title: _.capitalize(key),
+          kind: strapi.models[key].kind,
           type: "object",
           properties: {},
+          additionalProperties: false,
+          required: []
         };
 
         // Remove useless field from the attributes
@@ -65,19 +64,25 @@ module.exports = {
 
         // Parse the attributes and create the properties object for type definition
         for (const index in attributes) {
-          if (attributes[index].type === "enumeration") {
-            schema.properties[index] = { enum: attributes[index].enum };
-          } else {
-            schema.properties[index] = { type: types[attributes[index].type] };
+          if (attributes[index].required) {
+            schema.required.push(index)
           }
+          const property = _.omit(attributes[index], ['pluginOptions', 'required'])
+          
+          if (isTsType(property.type)) {
+            property.tsType = types[property.type]
+          } else {
+            property.type = types[property.type]
+          }
+
+          schema.properties[index] = property
         }
 
         // push to the response for the current model
-        models.contentTypes.push(contentType);
-        models.schema.push(schema);
+        jsonSchema.push(schema);
       }
     }
 
-    ctx.send(models);
+    ctx.send(jsonSchema);
   },
 };

@@ -3,5 +3,5 @@
 
 ### Bug Fixes
 
-* **deps:** pin dependencies ([20c2000](https://github.com/Stun3R/strapi-plugin-sdk-bridge/commit/20c2000624ccb14307a0cb9a732bd04988c08e97))
+* **deps:** pin dependencies ([20c2000](https://github.com/Stun3R/strapi-plugin-json-schema/commit/20c2000624ccb14307a0cb9a732bd04988c08e97))
 

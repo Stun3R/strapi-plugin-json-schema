@@ -27,24 +27,6 @@ export class HomePage extends React.Component {
     return window.focus();
   };
 
-  getPluginHeaderActions = () => {
-    const actions = [
-      {
-        color: 'none',
-        label: this.context.formatMessage({
-          id: getTrad('containers.HomePage.Button.open'),
-        }),
-        className: 'buttonOutline',
-        onClick: this.openDocumentation,
-        type: 'button',
-        key: 'button-open',
-        Component: (props) => <Button {...props} />,
-      },
-    ];
-
-    return actions;
-  };
-
   handleCopy = () => {
     strapi.notification.toggle({
       type: 'info',
@@ -57,7 +39,6 @@ export class HomePage extends React.Component {
     return (
       <ContainerFluid className="container-fluid">
         <Header
-          actions={this.getPluginHeaderActions()}
           title={{
             label: formatMessage({
               id: getTrad('containers.HomePage.PluginHeader.title'),

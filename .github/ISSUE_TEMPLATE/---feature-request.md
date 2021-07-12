@@ -1,6 +1,6 @@
 ---
 name: "\U0001F680 Feature Request"
-about: Suggest an idea or enhancement for the SDK Bridge!
+about: Suggest an idea or enhancement for the JSON Schema!
 title: ''
 labels: enhancement
 assignees: ''

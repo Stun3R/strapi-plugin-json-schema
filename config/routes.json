@@ -3,9 +3,9 @@
     {
       "method": "GET",
       "path": "/",
-      "handler": "sdk-bridge.index",
+      "handler": "json-schema.index",
       "config": {
-        "policies": ["plugins::sdk-bridge.index"]
+        "policies": ["plugins::json-schema.index"]
       }
     }
   ]

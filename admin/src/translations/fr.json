@@ -1,9 +1,10 @@
 {
-  "containers.HomePage.Button.open": "Ouvrir la documentation",
-  "containers.HomePage.PluginHeader.description": "Récupérez votre Token d'authentification afin d'authentifier le CLI du package Strapi SDK.",
-  "containers.HomePage.PluginHeader.title": "Strapi SDK Bridge - Authentification",
+  "containers.HomePage.PluginHeader.description": "Récupérez votre Token d'authentification afin d'effectuer une requête sur la route `/json-schema`.",
+  "containers.HomePage.PluginHeader.title": "JSON Schema - Authentification",
   "containers.HomePage.copied": "Token copié dans le presse papier",
   "containers.HomePage.jwtToken": "Récuperez votre jwt token",
-  "containers.HomePage.jwtToken.description": "Copiez-collez ce jeton dans le fichier .env de votre frontend afin d'utiliser la fonction de génération de SDK.",
-  "plugin.name": "SDK Bridge"
+  "containers.HomePage.jwtToken.description": "Copiez-collez ce token dans le header de votre requête afin d'effectuer une requête sur la route `/json-schema`",
+  "plugin.name": "JSON Schema",
+  "plugin.description.long": "Génère des JSON Schema par rapport à vos types de contenus.",
+  "plugin.description.short": "Génère des JSON Schema par rapport à vos types de contenus."
 }

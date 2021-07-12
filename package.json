@@ -1,11 +1,11 @@
 {
-  "name": "strapi-plugin-sdk-bridge",
+  "name": "strapi-plugin-json-schema",
   "version": "1.0.1",
-  "description": "Bridge for the Strapi SDK in order to generate Typescript's types by exposing your Strapi content types.",
+  "description": "Generate JSON Schema based on your Strapi content types.",
   "strapi": {
-    "name": "sdk-bridge",
+    "name": "JSON Schema",
     "icon": "plug",
-    "description": "Bridge for the Strapi SDK in order to generate Typescript's types by exposing your Strapi content types."
+    "description": "json-schema.plugin.description"
   },
   "scripts": {
     "lint": "eslint . --ext .ts,.js",
