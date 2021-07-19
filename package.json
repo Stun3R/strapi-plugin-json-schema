@@ -14,7 +14,7 @@
     "release": "dotenv release-it --"
   },
   "dependencies": {
-    "@buffetjs/core": "3.3.6",
+    "@buffetjs/core": "3.3.8",
     "@buffetjs/custom": "3.3.6",
     "strapi-helper-plugin": "3.6.5"
   },
