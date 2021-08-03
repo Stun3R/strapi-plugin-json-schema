@@ -19,8 +19,8 @@
     "strapi-helper-plugin": "3.6.5"
   },
   "devDependencies": {
-    "@commitlint/cli": "12.1.4",
-    "@commitlint/config-conventional": "12.1.4",
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-conventional": "13.1.0",
     "@release-it/conventional-changelog": "3.0.1",
     "babel-eslint": "10.1.0",
     "commitizen": "4.2.4",
