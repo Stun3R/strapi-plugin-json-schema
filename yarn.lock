@@ -253,6 +253,25 @@
     react-dates "^21.1.0"
     react-tooltip "^4.2.11"
 
+"@buffetjs/utils@3.3.6":
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/@buffetjs/utils/-/utils-3.3.6.tgz#d8c79a866219e0005c0f3b28905f7a5be8aa740e"
+  integrity sha512-hyPRXdouKFUz+9/TZcQ0sOWz4sdyMt2EiehSB3Gy91E5dHi0A3a+gVStVlm/eqez7w+AAofKyQ0UDqc9ajXu9Q==
+  dependencies:
+    lodash "4.17.21"
+    yup "^0.27.0"
+
+"@buffetjs/utils@3.3.8":
+  version "3.3.8"
+  resolved "https://registry.yarnpkg.com/@buffetjs/utils/-/utils-3.3.8.tgz#d21ef4c09bb2173e2a7465d39805237ade06b235"
+  integrity sha512-xRod8N11iWfFayqh5EMP4ScAgpr9GtDOdAJdcKlBLmZqf/rik3StT26GR70Zg25OkFNJ5lt9zknD2vJrdmBX7A==
+  dependencies:
+    lodash "^4.17.19"
+    resolve-from "5.0.0"
+    resolve-global "1.0.0"
+    yargs "^17.0.0"
+    yup "^0.32.9"
+
 "@commitlint/cli@13.1.0":
   version "13.1.0"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-13.1.0.tgz#3608bb24dbef41aaa0729ffe65c7f9b57409626a"
@@ -263,18 +282,6 @@
     "@commitlint/load" "^13.1.0"
     "@commitlint/read" "^13.1.0"
     "@commitlint/types" "^13.1.0"
-
-"@buffetjs/utils@3.3.8":
-  version "3.3.8"
-  resolved "https://registry.yarnpkg.com/@buffetjs/utils/-/utils-3.3.8.tgz#d21ef4c09bb2173e2a7465d39805237ade06b235"
-  integrity sha512-xRod8N11iWfFayqh5EMP4ScAgpr9GtDOdAJdcKlBLmZqf/rik3StT26GR70Zg25OkFNJ5lt9zknD2vJrdmBX7A==
-  dependencies:
-    lodash "4.17.21"
-    yup "^0.32.9"
-    lodash "^4.17.19"
-    resolve-from "5.0.0"
-    resolve-global "1.0.0"
-    yargs "^17.0.0"
 
 "@commitlint/config-conventional@13.1.0":
   version "13.1.0"
@@ -725,10 +732,10 @@
   dependencies:
     "@octokit/openapi-types" "^9.1.1"
 
-"@release-it/conventional-changelog@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-3.0.1.tgz#5dafe9b670d377bb1914a8691ae2531e71859fb9"
-  integrity sha512-yQZquSPkr5J2nj6bxvLbnvIdYOhyzYMbFbMeoFaWxmxBNXQdkJrFhjvn4VhKGpeOjklr+9oOJVwNofEZtbOPxg==
+"@release-it/conventional-changelog@3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-3.3.0.tgz#0f79e4b736412040d37c2b84bf433e393268c08e"
+  integrity sha512-pchCHf+wNpn15oj2hau4gisFKQat/01JuTzAwlGsQE83ZUBknU4dRlPA3xf5F5f3K70VVTQ3lx4/lgQvR+zxww==
   dependencies:
     concat-stream "^2.0.0"
     conventional-changelog "^3.1.24"
