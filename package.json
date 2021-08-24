@@ -16,7 +16,7 @@
   "dependencies": {
     "@buffetjs/core": "3.3.8",
     "@buffetjs/custom": "3.3.8",
-    "strapi-helper-plugin": "3.6.5"
+    "strapi-helper-plugin": "3.6.8"
   },
   "devDependencies": {
     "@commitlint/cli": "13.1.0",
